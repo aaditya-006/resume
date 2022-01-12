@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /*Home*/
 #home{
     height: 800px;
@@ -25,28 +30,81 @@
 /*navbar*/
 
 nav ul li a{
-    font-size: 16px;
-}
-.checkbtn{
-    display: block;
+    font-size: 20px;
 
 }
-ul{
-    position: fixed;
+.checkbtn{
+    position: absolute;
+    right:2;
+    position: sticky;
+    display: block;
+    justify-content: left;
+}
+
+nav ul{
+    position: absolute;
     width: 100%;
+    left:0;
     height: 100vh;
     background:rgba(0, 0, 0, 1);
-    top: 80px;
+    top: 45px;
     left: -100vh;
     transition: all 0.5s;
     text-align: center;
 }
 nav ul li{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px 0;
-    line-height: 30px ;
+    min-width: 100% !important;
+    display: block;
+    width: 100%;
 }
 #check:checked ~ ul{
     left:0;
+}
+
+
+/*Contacts*/
+
+#contacts{
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.9);
+    color:white;
+    margin: auto;
+}
+.contact{
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: justify;
+    text-align: left;
+}
+
+
+.yt {
+    padding: 40px;
+}
+
+.socials{
+    color: black;
+    line-height: 3rem;
+    padding:20px;
+    width: 50%;
+    border-radius: 7%;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(255, 255, 255);
+    word-spacing: 10px;
+}
+
+.socials i{
+    width:auto;
+    height: 70px;
+}
+
+iframe{
+    width: 100%;
+    height: 300px;
 }
