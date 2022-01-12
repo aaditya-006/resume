@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
 }
 html{
     scroll-behavior: smooth;
@@ -26,15 +25,15 @@ html{
     margin: 20px 10px;
 }
 .navbar ul li{
-    font-family: century;
-    font-size: 1.1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .navbar ul li a{
     text-decoration: none;
     color:white;
     text-transform:uppercase;
-    padding:20px 25px;
+    padding:20px 20px;
     transition: all 0.5 ease;
 }
 
@@ -63,10 +62,12 @@ html{
 /*Home Section*/    
 
 #home{
+    font-family: 'Roboto Mono', monospace;
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.6);
     height: 840px;
+    text-transform:capitalize;
     justify-content: center;
     align-items: center;
     color: white;
@@ -77,7 +78,7 @@ html{
     position: absolute;
     top:0;
     right: 0;
-    background: url('images/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg') no-repeat;
+    background: url('images/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg') no-repeat center;
     height: 900px;
     width:100%;
     z-index: -1;
@@ -116,6 +117,7 @@ html{
 
 /*about section*/
 #about{
+    font-family: 'Roboto Mono', monospace;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -126,7 +128,7 @@ html{
     display: flex;
 }
 #pic img{
-    width: 575px;
+    width: auto;
     height: 400px;
     border-radius: 50%;
     box-shadow:  0 10px 70px black;
@@ -157,13 +159,43 @@ html{
 .gallery{
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .gallery img{
     margin:10px;
+    height: 100px;
+    width: auto;
+}
+.database{
+    font-size: 2.2rem;
+    text-decoration: underline ;
 }
 
+.rowcert{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+hr{
+    width: 100%;
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height:150px;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10%;
+    background:rgba(255, 255, 255, 0.3);
+}
+.col1 p{
+    padding-top: 20px;
+}
 /* services */
 
 #services{
@@ -198,4 +230,47 @@ html{
     color: white;
     box-shadow: 0 0 50px rgb(225,45,45);
     border: none;
+}
+
+/*CONTACTS*/
+
+#contacts{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color:rgba(0, 0, 0, 0.9);
+    color:white;
+}
+.contact{
+    
+    align-items: center;
+    font-size: 1.5rem;
+    padding:80px;
+    margin:auto;
+}
+
+
+.yt {
+    padding: 40px;
+}
+
+.socials{
+    color: black;
+    line-height: 3rem;
+    padding:20px;
+    width: 25%;
+    border-radius: 7%;
+    text-transform: uppercase;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+    background-color:rgb(255, 255, 255);
+    word-spacing: 10px;
+}
+
+.socials i{
+    width:auto;
+    height: 70px;
 }
