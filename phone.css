@@ -29,6 +29,10 @@
 
 /*navbar*/
 
+nav{
+    z-index:1;
+}
+
 nav ul li a{
     font-size: 20px;
 
